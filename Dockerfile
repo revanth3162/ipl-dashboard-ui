@@ -8,7 +8,7 @@ WORKDIR /app
 # install app dependencies
 COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install --global
-RUN npm install node-sass --force
+RUN npm install sass --force
 
 # add app
 COPY . .
