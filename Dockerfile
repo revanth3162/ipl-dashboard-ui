@@ -13,6 +13,7 @@ EXPOSE 3000
 COPY package.json ./
 COPY package-lock.json ./
 RUN npm install
+RUN npm install node-sass -D
 
 # add app
 COPY . ./
