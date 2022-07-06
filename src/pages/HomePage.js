@@ -7,7 +7,7 @@ export const HomePage = () =>{
     useEffect(
         () => {
             const fetchAllTeams = async () =>{
-                const response = await fetch(`http://ipldashboard-app-ipldashboard.linuxops-pune-a34.conygre.com/team`);
+                const response = await fetch(`http://ipl-dashboard-server-app-ipl-dashboard-server.linuxops-pune-a33.conygre.com//team`);
                 const data = await response.json();
                 setTeams(data);
             };
