@@ -1,4 +1,4 @@
-def projectName = 'reactdemo'
+def projectName = 'ipl-dashboard-ui'
 def version = "0.0.${currentBuild.number}"
 def dockerImageTag = "${projectName}:${version}"
 
@@ -25,6 +25,7 @@ pipeline {
                 sh "oc project ${projectName} || oc new-project ${projectName}"
                 sh "oc delete all --selector app=${projectName} || echo 'Unable to delete all previous openshift resources'"
                 sh "oc new-app ${dockerImageTag} -l version=${version}"
+                sh "oc dc ${projectName} --port=3000"
                 sh "oc expose svc/${projectName}"
             }
         }
