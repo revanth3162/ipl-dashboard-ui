@@ -12,8 +12,8 @@ EXPOSE 3000
 # install app dependencies
 COPY package.json ./
 COPY package-lock.json ./
-RUN npm install
 RUN npm install node-sass -D
+RUN npm install
 
 # add app
 COPY . ./
