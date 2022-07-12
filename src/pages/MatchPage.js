@@ -10,7 +10,7 @@ export const MatchPage = () => {
     useEffect(
       () => {
         const fetchMatches = async () =>{
-          const response = await fetch(`http://ipl-dashboard-server-app-ipl-dashboard-server.linuxops-pune-a33.conygre.com/team/${teamName}/matches?year=${year}`);
+          const response = await fetch(`http://localhost:8081/ipl/team/${teamName}/matches?year=${year}`);
           const data = await response.json();
           setMatches(data);
         };

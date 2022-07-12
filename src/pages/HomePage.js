@@ -7,22 +7,21 @@ export const HomePage = () =>{
     useEffect(
         () => {
             const fetchAllTeams = async () =>{
-                const response = await fetch(`http://ipl-dashboard-server-app-ipl-dashboard-server.linuxops-pune-a33.conygre.com/team`);
+                const response = await fetch(`http://192.168.0.106:8081/ipl/team`);
                 const data = await response.json();
                 setTeams(data);
             };
             fetchAllTeams();
         }, []
     );
-
     return (
         <div className="HomePage">
             <div className="header-section">
-                <h1 className="app-name">IPL DashBoard</h1> 
-            </div>
-            <div className="team-grid">
-                {teams.map(team => <TeamTile teamName={team.teamName}/>)}
-            </div>
+                <h1 className="app-name">IPL DashBoard 2022</h1> 
         </div>
+        <div className="teams-section"> 
+            {teams.map(team => <TeamTile teamName={team.teamName}/>)}
+        </div>
+        </div> 
     )
 }

@@ -1,7 +1,9 @@
 .TeamTile{
-    height: 100px;
-    width:200px;
-    text-align: center;
-    border: 1px solid white;
-    padding: 20px;
+    column-gap: 4rem;
+    padding:5%;
+    img{
+        width:22vh;
+        height:16vh;
+    }
+    
 }
