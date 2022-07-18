@@ -11,16 +11,17 @@ export const YearSelector = ({teamName}) =>{
     for(let i=startYear; i<=endYear;i++){
         years.push(i);
     }
-
-    return (<ol className="YearSelector">
-        { years.map(year=> (
+    console.log(years);
+    return (
+    <ol className="YearSelector">
+        {years.map(year=> (
         <li>
             <Link to={`/team/${teamName}/matches/${year}`}>{year}</Link>
         </li>
         )
         )
     }
-     </ol>
+    </ol>
     );
     
 }

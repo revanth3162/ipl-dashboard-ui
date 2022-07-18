@@ -1,3 +1,16 @@
 .MatchPage{
-    
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 0.75fr 6fr;
+    gap: 1rem;
+    .year-content{
+        h1{
+            margin-bottom: 1.2%;
+        }
+    }
+    .year-detail-match{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
