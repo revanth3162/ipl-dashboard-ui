@@ -3,10 +3,8 @@
     display: grid;
     grid-template-columns: 0.75fr 6fr;
     gap: 1rem;
-    .year-content{
-        h1{
-            margin-bottom: 1.2%;
-        }
+    h1{
+        margin-bottom: 1rem;
     }
     .year-detail-match{
         display: flex;

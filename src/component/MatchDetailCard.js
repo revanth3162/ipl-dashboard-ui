@@ -39,7 +39,7 @@ export const MatchDetailCard = ({teamName, match}) => {
         </div>
       </div>
       <div className="match-result-section">
-      <p> {match.pom} is awarded with Man Of the Match</p>
+      <p className="bold"> {match.pom} is awarded with Man Of the Match</p>
       <p className="bold">{match.result}</p>
       </div>
     </div>
