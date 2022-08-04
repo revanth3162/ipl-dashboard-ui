@@ -1,9 +1,20 @@
 .YearSelector{
     text-align: left;
-    background-color: #4da375;
     list-style: none;
     li{
         margin: 5% auto;
         padding-left: 4%;
+        a{
+            color:black;
+            font-weight: 600;
+        }
+        a:focus{
+            color:black;
+            background-color: whitesmoke;
+            padding:10%;
+            margin:5%;
+            border:1px solid black;
+        }
     }
+    
 }

@@ -1,14 +1,29 @@
 .MatchPage{
-    margin: 5%;
-    display: grid;
-    grid-template-columns: 0.5fr 6fr;
-    gap: 1rem;
-    h1{
-        margin-bottom: 1rem;
+    background-color: whitesmoke;
+    .heading-fixed{
+        margin:0;
+        position:fixed;
+        width:100%;
+        padding:0.5em;
+        background-color: white;
+        border: 1px solid black;
     }
-    .year-detail-match{
-        display: flex;
-        flex-direction: column;
+    
+    .match-content{
+        display: grid;
+        grid-template-columns: 0.6fr 6fr;
         gap: 1rem;
+        .year-detail-match{
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .year-selector{
+            margin-top:3em;
+        }
+        
     }
+    
+    
 }

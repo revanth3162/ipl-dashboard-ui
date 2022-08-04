@@ -4,7 +4,7 @@ import "./MatchDetailCard.scss"
 
 
 export const MatchDetailCard = ({teamName, match}) => {
-  if(!match) return null;
+  if(!match) return <h1>No Matches found</h1>;
   const otherTeam = match.team1 === teamName ? match.team2 : match.team1;
   const otherTeamRoute = `/team/${otherTeam}`;
   const isMatchWon = teamName === match.matchWinner;
@@ -23,16 +23,16 @@ export const MatchDetailCard = ({teamName, match}) => {
       </div>
 
       <div className="match-statistics">
-        <div>
-          <p> {match.team1}</p>
+        <div className="team1">
+          <a href="#"> {match.team1}</a>
           <p> {match.score1}</p>
           <p> Key Batsmen: {match.keyBatsmen1}</p>
           <p> Key Bowler: {match.keyBowler1}</p>
         </div>
         <div className={isMatchWon ? 'lost-card': 'won-card'}>
         </div>
-        <div>
-          <p> {match.team2}</p>
+        <div className="team2">
+          <a href="#"> {match.team2}</a>
           <p> {match.score2}</p>
           <p> Key Batsmen: {match.keyBatsmen2}</p>
           <p> Key Bowler: {match.keyBowler2}</p>

@@ -17,7 +17,7 @@ export const MatchSmallCard = ({teamName, match}) => {
       </h1>
       <p>{match.tossWinner} won toss & chose to {match.tossDecision}</p>
       
-      <p className="match-result">{match.result}</p>
+      <a href="#"className="match-result">{match.result}</a>
       <p>MOM: {match.pom}</p>
       </div>
     </div>

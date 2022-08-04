@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import Footer from './footer';
 import {TeamPage} from './pages/TeamPage';
 import {MatchPage} from './pages/MatchPage';
 import {HomePage} from './pages/HomePage';
@@ -13,6 +14,7 @@ function App() {
             <Route path='/team/:teamName' exact element={<TeamPage/>}></Route>
           </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }

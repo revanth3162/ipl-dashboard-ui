@@ -1,5 +1,7 @@
 .MatchDetailCard{
     line-height: 1.6rem;
+    // color:white;
+    padding: 2%;
     .team-info{
         padding: 1%;
     }
@@ -22,6 +24,18 @@
         width:3px;
     }
     .bold{
-        font-weight: bold;
+        color: white;
+    }
+    @media all and (max-width:550px){
+        font-size: 0.85rem;
+        .won-card{
+            width:3px;
+        }
+        .lost-card{
+            width:3px;
+        }
+        .match-statistics{
+            display: block;
+        }
     }
 }

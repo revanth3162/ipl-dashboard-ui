@@ -7,18 +7,23 @@
     .match-small-section{
         margin-top: 1%;
     }
-    
     .small-cards{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
-
     @media all and(max-width:1170px){
         .small-cards{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
+        }
+    }
+    @media all and(max-width:550px){
+        .small-cards{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
         }
     }
     .more-link-section{  
